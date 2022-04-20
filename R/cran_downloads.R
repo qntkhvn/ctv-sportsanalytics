@@ -77,4 +77,4 @@ pk_downloads %>%
   pluck("cranlogs.data") %>% 
   group_by(package) %>% 
   slice_max(cumulative) %>% 
-  arrange(desc(cumulative))
+  arrange(desc(cumulative)) 

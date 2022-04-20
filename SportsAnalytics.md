@@ -1,12 +1,12 @@
 ---
 name: SportsAnalytics
 topic: Sports Analytics
-maintainer: Ben Baumer, Quang Nguyen
+maintainer: Ben Baumer, Quang Nguyen, Greg Matthews
 email: ben.baumer@gmail.com
 version: 2022-04-20
 ---
 
-This CRAN Task View contains a list of packages useful for sports analytics, grouped by sport. Following the list of packages, we havve included a list of selected books and articles that use some of these packages in substantive ways. Our goal in compiling this list is to help researchers find the tools they need to complete their work in R.
+This CRAN Task View contains a list of packages useful for sports analytics, grouped by sport. Following the list of packages, we have included a list of selected books and articles that use some of these packages in substantive ways. Our goal in compiling this list is to help researchers find the tools they need to complete their work in R.
 
 The list of packages is aspirationally comprehensive. If there is a sports analytics package on CRAN that we have missed, please let us know. Contributions are always welcome, and encouraged. The source file for this particular task view file resides in a GitHub repository (see below). Please read the [Guide to Contributing](Contributing.md), then open an issue and/or submit a pull request.
 
@@ -43,6 +43,7 @@ The list of packages is aspirationally comprehensive. If there is a sports analy
 -   `r pkg("cfbfastR")` provides function for accessing college football play-by-play data from [collegefootballdata.com](https://collegefootballdata.com/).
 
 ### Hockey
+
 <!-- no longer on CRAN
 -   `r pkg("hockeyR")` contains functions to load raw NHL play-by-play data from [NHL.com](https://nhl.com). Additionally, it contains functions for scraping [www.hockey-reference.com](https://www.hockey-reference.com) including standings, player stats, and jersey number history.
 -->
@@ -129,7 +130,7 @@ The list of packages is aspirationally comprehensive. If there is a sports analy
 -   `r pkg("sportyR")` contains functions for creating **ggplot2** representations of sports playing surfaces pursuant to rule-book specifications. This is particularly useful for plotting player tracking data.
 -   `r pkg("SportsTour")` provides functions for displaying tournament fixtures using knock-out and round robin methods.
 
-##  Modeling
+###  Modeling
 
 -   `r pkg("BradleyTerry2")` provides functions and examples for fitting Bradley-Terry models to paired comparison data.
 
@@ -143,7 +144,7 @@ Several of these packages feature prominently in books and articles on various s
 
     The package itself is detailed in:
 
-    -   Sievert, C. (2014). Taming PITCHf/x Data with XML2R and pitchRx. *R Journal*, 6(1).
+    -   Sievert, C. (2014). [Taming PITCHf/x Data with XML2R and pitchRx](https://journal.r-project.org/archive/2014/RJ-2014-001/index.html). *R Journal*, 6(1).
 
 -   `r pkg("BasketballAnalyzeR")` accompanies:
     -   Zuccolotto, P., and Manisera, M. (2020). [*Basketball data science: with applications in R*](https://www.routledge.com/Basketball-Data-Science-With-Applications-in-R/Zuccolotto-Manisera/p/book/9780429470615). CRC Press.
@@ -152,9 +153,10 @@ Several of these packages feature prominently in books and articles on various s
     -   Constantinou, A. C., Fenton, N. E., and Neil, M. (2013). [Profiting from an inefficient Association Football gambling market: Prediction, Risk and Uncertainty using Bayesian networks](https://www.sciencedirect.com/science/article/pii/S095070511300169X). *Knowledge-Based Systems*, 50, 60-86.
 
 -   `r pkg("teamcolors")` was originally designed to create the data graphics in:
-    -   Lopez, M. J., Matthews, G. J., and Baumer, B. S. (2018). [How often does the best team win? A unified approach to understanding randomness in North American sport](https://projecteuclid.org/journals/annals-of-applied-statistics/volume-12/issue-4/How-often-does-the-best-team-win-A-unified-approach/10.1214/18-AOAS1165.short). *The Annals of Applied Statistics*, 12(4), 2483-2516.
+    -   Lopez, M. J., Matthews, G. J., and Baumer, B. S. (2018). [How often does the best team win? A unified approach to understanding randomness in North American sport](https://projecteuclid.org/journals/annals-of-applied-statistics/volume-12/issue-4/How-often-does-the-best-team-win-A-unified-approach/10.1214/18-AOAS1165.full). *The Annals of Applied Statistics*, 12(4), 2483-2516.
 
 ### Links
+
 -   [GitHub repository for this Task View](https://github.com/beanumber/ctv-sportsanalytics)
 
 <!-- view
