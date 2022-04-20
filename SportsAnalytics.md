@@ -6,8 +6,6 @@ email: ben.baumer@gmail.com
 version: 2021-11-02
 ---
 
-
-
 This CRAN Task View contains a list of packages useful for sports analytics, grouped by sport. Following the list of packages, we've included a list of selected books and articles that use some of these packages in substantive ways. Our goal in compiling this list is to help researchers find the tools they need to complete their work in R.
 
 The list of packages is aspirationally comprehensive. If there is a sports analytics package on CRAN that we have missed, please let us know. Contributions are always welcome, and encouraged. The source file for this particular task view file resides in a GitHub repository (see below). Please read the [Guide to Contributing](Contributing.md), then open an issue and/or submit a pull request.
@@ -17,7 +15,7 @@ The list of packages is aspirationally comprehensive. If there is a sports analy
 -   Historical baseball data is available through the `r pkg("Lahman")` package, which contains season-level data for Major League Baseball going back to 1871.
 -   `r pkg("retrosheet")` facilitates downloading game log, team IDs, rosters, and play-by-play and other files from [Retrosheet.org](http://wwws.retrosheet.org/), and returning the results as data frames. Local caching can be employed to improve efficiency. Note that the play-by-play data returned comes directly from the event files and is not parsed (i.e., [Chadwick](https://github.com/chadwickbureau/chadwick) is not bundled).
 -   `r pkg("pitchRx")` provides access to pitch-level data through the Major League Baseball Advanced Media API.
--   `r pkg("mlbstats")` provides functions for vector-based computation of many baseball statistics, both traditional and sabermetric. This should not be confused with `r pkg("mlbstatsR")` which provides an interface to websites such as MLB.com, ESPN.com, and Baseball-Reference.com. `r pkg("mlbstatsR")` can download IDs and stats for players and team, as well as MLB logos.
+-   `r pkg("mlbstats")` provides functions for vector-based computation of many baseball statistics, both traditional and sabermetric. <!-- no longer on CRAN. This should not be confused with `r pkg("mlbstatsR")` which provides an interface to websites such as MLB.com, ESPN.com, and Baseball-Reference.com. `r pkg("mlbstatsR")` can download IDs and stats for players and team, as well as MLB logos. -->
 -   `r pkg("baseballDBR")` leverages the backend database functionality of **dplyr** to build local databases that mirror the data contained in `r pkg("Lahman")`. Like `r pkg("mlbstats")`, it also includes functions to compute baseball statistics, but on data frames rather than vectors.
 
 ### Basketball
@@ -29,7 +27,8 @@ The list of packages is aspirationally comprehensive. If there is a sports analy
 -   `r pkg("NBAloveR")` is an R interface to access basketball data from [Basketball Reference](https://www.basketball-reference.com) API. This package also contains functions to help users with analyzing basketball data.
 -   `r pkg("SpatialBall")` helps with spatial analysis of NBA data, in particular, generating offensive and defensive shot charts for teams, players, and seasons.
 -   `r pkg("wehoop")` provides functions for accessing women's college basketball and WNBA data from the [ESPN](https://www.espn.com) API.
--   `r pkg("hoopR")` provides functions for accessing men's college basketball and NBA data from various sources, including [ESPN](https://www.espn.com), [NBA Stats API](https://www.nba.com/stats), and [Ken Pomeroy's college basketball ratings](https://www.kenpom.com).
+-   `r pkg("hoopR")` consists of functions for accessing men's college basketball and NBA data from various sources, including [ESPN](https://www.espn.com), [NBA Stats API](https://www.nba.com/stats), and [Ken Pomeroy's college basketball ratings](https://www.kenpom.com).
+-   `r pkg("nbapalettes")` contains color palettes inspired by NBA team jersey colors.
 
 ### Football
 
@@ -44,8 +43,9 @@ The list of packages is aspirationally comprehensive. If there is a sports analy
 -   `r pkg("cfbfastR")` provides function for accessing college football play-by-play data from [collegefootballdata.com](https://collegefootballdata.com/).
 
 ### Hockey
-
+<!-- no longer on CRAN
 -   `r pkg("hockeyR")` contains functions to load raw NHL play-by-play data from [NHL.com](https://nhl.com). Additionally, it contains functions for scraping [www.hockey-reference.com](https://www.hockey-reference.com) including standings, player stats, and jersey number history.
+-->
 -   `r pkg("NHLData")` contains scores from NHL games dating back to 1917. Data are stored one season at a time and contains scores for every game during a particular season.
 -   Access to data exposed by the [NHL API](https://gitlab.com/dword4/nhlapi) is provided by the `r pkg("nhlapi")` and `r pkg("nhlscrape")` packages.
 -   `r pkg("fastRhockey")` provides API wrappers for the NHL and Premier Hockey Federation (PHF), formerly known as the National Women's Hockey League (NWHL).
@@ -58,7 +58,11 @@ The list of packages is aspirationally comprehensive. If there is a sports analy
 -   `r pkg("ggsoccer")` provides functions for visualizing soccer event data in **ggplot2**.
 -   `r pkg("qqr")` is a collection of [Brazilian Soccer Championship](https://brasileirao.cbf.com.br/) data on match statistics since 2014.
 -   `r pkg("footballpenaltiesBL")` contains data and plotting functions for analyzing penalty kicks in the [German Men's Bundesliga](https://www.bundesliga.com/) from 1963-64 to 2016-17.
+-   `r pkg("footBayes")` consists of functions for fitting widely known soccer models (double Poisson, bivariate Poisson, Skellam, Student's t) through Hamiltonian Monte Carlo and Maximum Likelihood estimation approaches using Stan. The package also provides tools for visualizing team strengths and predicting match outcomes.
+-   `r pkg("itscalledsoccer")` enables access to American soccer (MLS, NWSL, and USL) data through the [American Soccer Analysis app API](https://app.americansocceranalysis.com/).
+<!-- no longer on CRAN
 -   `r pkg("worldfootballR")` provides clean and tidy soccer game data from a number of popular sites, including [FBref](https://fbref.com/en/), transfer and valuations data from [Transfermarkt](https://www.transfermarkt.com/) and shooting location data from [Understat](https://understat.com/).
+-->
 
 ### Chess
 
@@ -66,6 +70,7 @@ The list of packages is aspirationally comprehensive. If there is a sports analy
 -   `r pkg("stockfish")` implements the UCI open communication protocol and ships with [Stockfish](https://github.com/official-stockfish/Stockfish), a popular, open source, powerful chess engine written in C++.
 -   Like `r pkg("chess")`, `r pkg("bigchess")` reads and writes PGN files. And like `r pkg("stockfish")`, `r pkg("bigchess")` provides an API to the UCI chess engines. `r pkg("bigchess")` is also able to read multiple game files at once without copying to RAM.
 -   `r pkg("rchess")` provides functions for chess validations, pieces movements, check detection, and plotting chess boards.
+-   `r pkg("chessR")` allows users to obtain game data from online chess applications, including [chess.com](https://www.chess.com/) and [Lichess](https://lichess.org/).
 
 ### Track and Field
 
@@ -88,6 +93,7 @@ The list of packages is aspirationally comprehensive. If there is a sports analy
 
 -   `r pkg("yorkr")` provides functions for analyzing statistics of cricket players and teams based on [Cricsheet](https://cricsheet.org) data.
 -   `r pkg("cricketr")` is a collection of tools for analyzing cricket performances of players and teams based on [ESPN Cricinfo Statsguru](https://stats.espncricinfo.com/ci/engine/stats) data.
+-   `r pkg("cricketdata")` includes functions to obtain international cricket data from two major sources, [ESPNCricinfo](https://www.espncricinfo.com/) and [Cricsheet](https://cricsheet.org/).
 
 ### Volleyball
 
@@ -113,7 +119,9 @@ The list of packages is aspirationally comprehensive. If there is a sports analy
 
 -   `r pkg("teamcolors")` provides color palettes, **ggplot2** themes, **xaringan** themes, and logos for professional teams across a variety of sports and leagues.
 -   `r pkg("colorr")` contains color palettes for professional sports teams in the EPL, MLB, NBA, NHL, and NFL.
+<!-- no longer on CRAN
 -   `r pkg("aRbs")` contains functions for finding arbitrage opportunities in sports betting websites. Data are collected through [www.oddschecker.com](https://www.oddschecker.com)
+-->
 -   `r pkg("mvglmmRank")` provides functions for building multivariate generalized mixed models for ranking teams in sports.
 -   The goal of the `r pkg("SportsAnalytics")` package is to provide infrastructure to perform general sports analytics. However, currently it appears to be incomplete and currently only contains a few data sets and functions.
 -   `r pkg("TouRnament")` consists of two functions: 1) Creating league tables based on results and 2) Creating a match schedule for a league.
@@ -141,8 +149,6 @@ Several of these packages feature prominently in books and articles on various s
 
 -   `r pkg("teamcolors")` was originally designed to create the data graphics in:
     -   Lopez, M. J., Matthews, G. J., and Baumer, B. S. (2018). [How often does the best team win? A unified approach to understanding randomness in North American sport](https://projecteuclid.org/journals/annals-of-applied-statistics/volume-12/issue-4/How-often-does-the-best-team-win-A-unified-approach/10.1214/18-AOAS1165.short). *The Annals of Applied Statistics*, 12(4), 2483-2516.
-
-
 
 ### Links
 -   [GitHub repository for this Task View](https://github.com/beanumber/ctv-sportsanalytics)
