@@ -3,10 +3,10 @@ name: SportsAnalytics
 topic: Sports Analytics
 maintainer: Ben Baumer, Quang Nguyen
 email: ben.baumer@gmail.com
-version: 2021-11-02
+version: 2022-04-20
 ---
 
-This CRAN Task View contains a list of packages useful for sports analytics, grouped by sport. Following the list of packages, we've included a list of selected books and articles that use some of these packages in substantive ways. Our goal in compiling this list is to help researchers find the tools they need to complete their work in R.
+This CRAN Task View contains a list of packages useful for sports analytics, grouped by sport. Following the list of packages, we havve included a list of selected books and articles that use some of these packages in substantive ways. Our goal in compiling this list is to help researchers find the tools they need to complete their work in R.
 
 The list of packages is aspirationally comprehensive. If there is a sports analytics package on CRAN that we have missed, please let us know. Contributions are always welcome, and encouraged. The source file for this particular task view file resides in a GitHub repository (see below). Please read the [Guide to Contributing](Contributing.md), then open an issue and/or submit a pull request.
 
@@ -156,3 +156,15 @@ Several of these packages feature prominently in books and articles on various s
 
 ### Links
 -   [GitHub repository for this Task View](https://github.com/beanumber/ctv-sportsanalytics)
+
+<!-- view
+- `r view("Databases")`
+- `r view("Graphics")`
+- `r view("MachineLearning")`
+- `r view("Multivariate")`
+- `r view("Graphics")`
+- `r view("ReproducibleResearch")`
+- `r view("TeachingStatistics")`
+- `r view("TrackingData")`
+- `r view("WebTechnologies")`
+-->
