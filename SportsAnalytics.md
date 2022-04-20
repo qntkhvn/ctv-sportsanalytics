@@ -129,6 +129,10 @@ The list of packages is aspirationally comprehensive. If there is a sports analy
 -   `r pkg("sportyR")` contains functions for creating **ggplot2** representations of sports playing surfaces pursuant to rule-book specifications. This is particularly useful for plotting player tracking data.
 -   `r pkg("SportsTour")` provides functions for displaying tournament fixtures using knock-out and round robin methods.
 
+##  Modeling
+
+-   `r pkg("BradleyTerry2")` provides functions and examples for fitting Bradley-Terry models to paired comparison data.
+
 ### Packages in action
 
 Several of these packages feature prominently in books and articles on various subjects. Here, we highlight some examples where you can learn more about a topic and how these R packages support that analysis.
