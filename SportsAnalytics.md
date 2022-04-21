@@ -12,15 +12,15 @@ The list of packages is aspirationally comprehensive. If there is a sports analy
 
 ### Baseball
 
--   Historical baseball data is available through the `r pkg("Lahman")` package, which contains season-level data for Major League Baseball going back to 1871.
+-   Historical baseball data is available through the `r pkg("Lahman", priority = "core")` package, which contains season-level data for Major League Baseball going back to 1871.
 -   `r pkg("retrosheet")` facilitates downloading game log, team IDs, rosters, and play-by-play and other files from [Retrosheet.org](http://wwws.retrosheet.org/), and returning the results as data frames. Local caching can be employed to improve efficiency. Note that the play-by-play data returned comes directly from the event files and is not parsed (i.e., [Chadwick](https://github.com/chadwickbureau/chadwick) is not bundled).
--   `r pkg("pitchRx")` provides access to pitch-level data through the Major League Baseball Advanced Media API.
+-   `r pkg("pitchRx", priority = "core")` provides access to pitch-level data through the Major League Baseball Advanced Media API.
 -   `r pkg("mlbstats")` provides functions for vector-based computation of many baseball statistics, both traditional and sabermetric. <!-- no longer on CRAN. This should not be confused with `r pkg("mlbstatsR")` which provides an interface to websites such as MLB.com, ESPN.com, and Baseball-Reference.com. `r pkg("mlbstatsR")` can download IDs and stats for players and team, as well as MLB logos. -->
 -   `r pkg("baseballDBR")` leverages the backend database functionality of **dplyr** to build local databases that mirror the data contained in `r pkg("Lahman")`. Like `r pkg("mlbstats")`, it also includes functions to compute baseball statistics, but on data frames rather than vectors.
 
 ### Basketball
 
--   `r pkg("BAwiR")` is a collection of tools to analyze basketball data, with focus on data scraping and visualization.
+-   `r pkg("BAwiR", priority = "core")` is a collection of tools to analyze basketball data, with focus on data scraping and visualization.
 -   `r pkg("AdvancedBasketballStats")` provides functions to calculate and analyze basketball statistics for players, teams, lineups (quintets), and plays.
 -   `r pkg("uncmbb")` contains data on University of North Carolina (at Chapel Hill) Men's Basketball Results since the 1949-50 season.
 -   `r pkg("BasketballAnalyzeR")` accompanies the book [Basketball Data Science With Applications in R](https://www.routledge.com/Basketball-Data-Science-With-Applications-in-R/Zuccolotto-Manisera/p/book/9781138600799). This package includes data and functions to analyze and visualize basketball data.
@@ -32,7 +32,7 @@ The list of packages is aspirationally comprehensive. If there is a sports analy
 
 ### Football
 
--   `r pkg("nflfastR")` contains functions to efficiently scrape NFL play-by-play data from 1999 to present. It is similar to [nflscrapR](https://github.com/maksimhorowitz/nflscrapR), but much faster.
+-   `r pkg("nflfastR", priority = "core")` contains functions to efficiently scrape NFL play-by-play data from 1999 to present. It is similar to [nflscrapR](https://github.com/maksimhorowitz/nflscrapR), but much faster.
 -   `r pkg("nflreadr")` efficiently downloads data from **GitHub** repositories of the [nflverse](https://github.com/nflverse) project, including precomputed `r pkg("nflfastR")` dataframes.
 -   `r pkg("nfl4th")` contains functions to calculate optimal Fourth Down decisions in the National Football League. Data on 4th downs is collected from [NFL](https://www.nfl.com/) and [ESPN](https://www.espn.com/).
 -   `r pkg("nflseedR")` contains functions for ranking NFL teams based on the complex NFL tie breaking rules. It includes division ranking, playoff seeding, and draft order.
@@ -133,7 +133,7 @@ The list of packages is aspirationally comprehensive. If there is a sports analy
 
 ###  Modeling
 
--   `r pkg("BradleyTerry2")` provides functions and examples for fitting Bradley-Terry models to paired comparison data. Packages `r pkg("BSBT")` (Bayesian Spatial Bradley-Terry) and `r pkg("BTdecayLasso")` (Bradley-Terry Model with Exponential Time Decayed Log-Likelihood and Adaptive Lasso) provides implementations to extended versions of the Bradley-Terry model.
+-   `r pkg("BradleyTerry2", priority = "core")` provides functions and examples for fitting Bradley-Terry models to paired comparison data. Packages `r pkg("BSBT")` (Bayesian Spatial Bradley-Terry) and `r pkg("BTdecayLasso")` (Bradley-Terry Model with Exponential Time Decayed Log-Likelihood and Adaptive Lasso) provides implementations to extended versions of the Bradley-Terry model.
 -   Methods for estimating the Elo rating system in sports can be found in `r pkg("elo")`, `r pkg("welo")`, `r pkg("EloOptimized")`, `r pkg("EloChoice")`, and `r pkg("EloRating")`. `r pkg("PlayerRatings")` also offers implementations to other rating systems, including Glicko, Glicko-2, and Stephenson, in addition to Elo.
 - A wide variety of functions for modeling in sports analytics is available in the R base package (e.g. `lm()` and `glm()`). In addition, other CRAN Task Views such as `r view("Bayesian")`, `r view("MachineLearning")`, `r view("Spatial")`, and `r view("SpatioTemporal")` may contain appropriate packages for applying statistical methods to sports.
 
