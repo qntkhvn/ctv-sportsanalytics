@@ -108,6 +108,7 @@ The list of packages is aspirationally comprehensive. If there is a sports analy
 
 -   `r pkg("trackeR")` and `r pkg("trackeRapp")` provide tools for analyzing running, cycling and swimming data from GPS-enabled tracking devices within R. These two packages allow users to tidy and explore data from workouts and competitions.
 -   `r pkg("rStrava")` contains functions to access [Strava](https://www.strava.com/) activity data from the [Strava API](https://developers.strava.com/).
+-   A complete list of methods for processing and analyzing tracking data can be found in the `r view("TrackingData")` CRAN Task View.
 
 ### Betting
 
@@ -132,7 +133,11 @@ The list of packages is aspirationally comprehensive. If there is a sports analy
 
 ###  Modeling
 
--   `r pkg("BradleyTerry2")` provides functions and examples for fitting Bradley-Terry models to paired comparison data.
+-   `r pkg("BradleyTerry2")` provides functions and examples for fitting Bradley-Terry models to paired comparison data. Packages `r pkg("BSBT")` (Bayesian Spatial Bradley-Terry) and `r pkg("BTdecayLasso")` (Bradley-Terry Model with Exponential Time Decayed Log-Likelihood and Adaptive Lasso) provides implementations to extended versions of the Bradley-Terry model.
+
+-   Methods for estimating the Elo rating system in sports can be found in `r pkg("elo")`, `r pkg("welo")`, `r pkg("EloOptimized")`, `r pkg("EloChoice")`, and `r pkg("EloRating")`. `r pkg("PlayerRatings")` also offers implementations to other rating systems, including Glicko, Glicko-2, and Stephenson, in addition to Elo.
+
+- A wide variety of functions for modeling in sports analytics (e.g. `lm()`, `glm()`) is available in the R base package. In addition, other CRAN Task Views such as `r view("Bayesian")`, `r view("MachineLearning")`, `r view("Spatial")`, and `r view("SpatioTemporal")` may contain appropriate packages for applying statistical methods to sports.
 
 ### Packages in action
 
@@ -158,15 +163,3 @@ Several of these packages feature prominently in books and articles on various s
 ### Links
 
 -   [GitHub repository for this Task View](https://github.com/beanumber/ctv-sportsanalytics)
-
-<!-- view
-- `r view("Databases")`
-- `r view("Graphics")`
-- `r view("MachineLearning")`
-- `r view("Multivariate")`
-- `r view("Graphics")`
-- `r view("ReproducibleResearch")`
-- `r view("TeachingStatistics")`
-- `r view("TrackingData")`
-- `r view("WebTechnologies")`
--->
