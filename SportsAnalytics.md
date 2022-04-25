@@ -49,6 +49,7 @@ The list of packages is aspirationally comprehensive. If there is a sports analy
 -   `r pkg("pitchRx", priority = "core")` provides access to pitch-level data through the Major League Baseball Advanced Media API.
 -   `r pkg("mlbstats")` provides functions for vector-based computation of many baseball statistics, both traditional and sabermetric. <!-- no longer on CRAN. This should not be confused with `r pkg("mlbstatsR")` which provides an interface to websites such as MLB.com, ESPN.com, and Baseball-Reference.com. `r pkg("mlbstatsR")` can download IDs and stats for players and team, as well as MLB logos. -->
 -   `r pkg("baseballDBR")` leverages the backend database functionality of **dplyr** to build local databases that mirror the data contained in `r pkg("Lahman")`. Like `r pkg("mlbstats")`, it also includes functions to compute baseball statistics, but on data frames rather than vectors.
+- `r pkg("baseballr")` consists of functions for extracting and analyzing baseball data from various sources such as [Baseball Reference](https://www.baseball-reference.com/), [FanGraphs](https://www.fangraphs.com/), and [Baseball Savant](https://baseballsavant.mlb.com/).
 
 #### Basketball
 
