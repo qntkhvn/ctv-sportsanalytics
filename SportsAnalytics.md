@@ -15,10 +15,11 @@ The list of packages is aspirationally comprehensive. If there is a sports analy
 #### American Football
 
 -   `r pkg("nflfastR", priority = "core")` contains functions to efficiently scrape NFL play-by-play data from 1999 to present. It is similar to [nflscrapR](https://github.com/maksimhorowitz/nflscrapR), but much faster.
--   `r pkg("nflreadr")` efficiently downloads data from **GitHub** repositories of the [nflverse](https://github.com/nflverse) project, including precomputed `r pkg("nflfastR")` dataframes.
--   `r pkg("nfl4th")` contains functions to calculate optimal Fourth Down decisions in the National Football League. Data on 4th downs is collected from [NFL](https://www.nfl.com/) and [ESPN](https://www.espn.com/).
+-   `r pkg("nflreadr")` efficiently downloads data from **GitHub** repositories of the [nflverse](https://github.com/nflverse) project, including pre-computed `r pkg("nflfastR")` data frames.
+-   `r pkg("nfl4th")` consists of functions to calculate optimal Fourth Down decisions in the National Football League. Data on 4th downs is collected from [NFL](https://www.nfl.com/) and [ESPN](https://www.espn.com/).
 -   `r pkg("nflseedR")` contains functions for ranking NFL teams based on the complex NFL tie breaking rules. It includes division ranking, playoff seeding, and draft order.
--   `r pkg("fflr")` contains functions for accessing ESPN raw fantasy football data from the ESPN fantasy football API and formatting the raw data.
+-   `r pkg("nflplotR")` includes functions for making NFL data visualization in **ggplot2** easier.
+-   `r pkg("fflr")` provides functions to access ESPN raw fantasy football data from the ESPN fantasy football API and formatting the raw data.
 -   `r pkg("ffscrapr")` helps access various fantasy football APIs including MFL, Sleeper, ESPN, and Fleaflicker with a consistent interface and built-in authentication, rate-limiting, and caching.
 -   `r pkg("ffsimulator")` allows users to simulate fantasy football seasons using bootstrap resampling. Simulations are based on historical rankings and data from the package `r pkg("nflfastR")`. In addition, functions for computing optimal lineups and aggregating results are provided.
 -   `r pkg("gsisdecoder")` contains functions to decode NFL Player IDs for use in conjunction with the `r pkg("nflfastR")` package.
