@@ -14,7 +14,8 @@ The list of packages is aspirationally comprehensive. If there is a sports analy
 
 #### American Football
 
--   `r pkg("nflfastR", priority = "core")` contains functions to efficiently scrape NFL play-by-play data from 1999 to present. It is similar to [nflscrapR](https://github.com/maksimhorowitz/nflscrapR), but much faster.
+-   `r pkg("nflverse", priority = "core")` is a collection of packages for obtaining and analyzing NFL data. The core `r pkg("nflverse")` includes `r pkg("nflfastR")`, `r pkg("nflseedR")`, `r pkg("nfl4th")`, `r pkg("nflreadr")`, and `r pkg("nflplotR")`.
+-   `r pkg("nflfastR")` contains functions to efficiently scrape NFL play-by-play data from 1999 to present. It is similar to [nflscrapR](https://github.com/maksimhorowitz/nflscrapR), but much faster. All models required by `r pkg("nflfastR")` are hosted in `r pkg("fastrmodels")`.
 -   `r pkg("nflreadr")` efficiently downloads data from **GitHub** repositories of the [nflverse](https://github.com/nflverse) project, including pre-computed `r pkg("nflfastR")` data frames.
 -   `r pkg("nfl4th")` consists of functions to calculate optimal Fourth Down decisions in the National Football League. Data on 4th downs is collected from [NFL](https://www.nfl.com/) and [ESPN](https://www.espn.com/).
 -   `r pkg("nflseedR")` contains functions for ranking NFL teams based on the complex NFL tie breaking rules. It includes division ranking, playoff seeding, and draft order.
