@@ -118,7 +118,8 @@ The list of packages is aspirationally comprehensive. If there is a sports analy
 
 ###  Modeling
 
-A wide variety of functions for modeling in sports analytics is available in the R base package (e.g. `lm()` and `glm()`). In addition, other CRAN Task Views such as `r view("Bayesian")`, `r view("MachineLearning")`, `r view("Spatial")`, and `r view("SpatioTemporal")` may contain appropriate packages for applying statistical methods to sports.
+A wide array of functions for modeling in sports analytics are available in the R base package (e.g. `lm()` and `glm()`). 
+In addition, other CRAN Task Views such as `r view("Bayesian")`, `r view("MachineLearning")`, `r view("Spatial")`, and `r view("SpatioTemporal")` may contain appropriate packages for applying statistical methods to sports.
 
 #### Betting
 
