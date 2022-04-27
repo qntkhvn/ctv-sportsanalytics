@@ -3,7 +3,7 @@ name: SportsAnalytics
 topic: Sports Analytics
 maintainer: Benjamin S. Baumer, Quang Nguyen, Gregory J. Matthews
 email: ben.baumer@gmail.com
-version: 2022-04-21
+version: 2022-04-27
 source: https://github.com/beanumber/ctv-sportsanalytics
 ---
 
@@ -115,7 +115,7 @@ Contributions are always welcome, and encouraged -- please see the linked GitHub
 
 -   `r pkg("trackeR")` and `r pkg("trackeRapp")` provide tools for analyzing running, cycling and swimming data from GPS-enabled tracking devices within R. These two packages allow users to tidy and explore data from workouts and competitions.
 -   `r pkg("rStrava")` contains functions to access [Strava](https://www.strava.com/) activity data from the [Strava API](https://developers.strava.com/).
--   A detailed overview of tools for processing and analyzing tracking data can be found in the `r view("TrackingData")` CRAN Task View.
+-   A detailed overview of tools for processing and analyzing tracking data can be found in the `r view("Tracking")` CRAN Task View.
 
 #### Hockey
 
