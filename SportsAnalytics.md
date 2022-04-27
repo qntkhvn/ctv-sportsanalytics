@@ -13,7 +13,7 @@ The list of packages is aspirationally comprehensive. If there is a sports analy
 
 ### General
 
--   `r pkg("teamcolors")` provides color palettes, **ggplot2** themes, **xaringan** themes, and logos for professional teams across a variety of sports and leagues.
+-   `r pkg("teamcolors")` provides color palettes, **ggplot2** themes, **xaringan** themes, and logos for professional teams across a variety of sports and leagues. `r pkg("teamcolors")` was originally designed to create the data graphics in [Lopez, et al. (2018)](https://projecteuclid.org/journals/annals-of-applied-statistics/volume-12/issue-4/How-often-does-the-best-team-win-A-unified-approach/10.1214/18-AOAS1165) (`r doi("10.1214/18-AOAS1165")`).
 -   `r pkg("colorr")` contains color palettes for professional sports teams in the EPL, MLB, NBA, NHL, and NFL.
 -   `r pkg("nbapalettes")` contains color palettes inspired by NBA team jersey colors.
 <!-- no longer on CRAN
@@ -63,7 +63,7 @@ The list of packages is aspirationally comprehensive. If there is a sports analy
 
 -   Historical baseball data is available through the `r pkg("Lahman", priority = "core")` package, which contains season-level data for Major League Baseball going back to 1871.
 -   `r pkg("retrosheet")` facilitates downloading game log, team IDs, rosters, and play-by-play and other files from [Retrosheet.org](http://wwws.retrosheet.org/), and returning the results as data frames. Local caching can be employed to improve efficiency. Note that the play-by-play data returned comes directly from the event files and is not parsed (i.e., [Chadwick](https://github.com/chadwickbureau/chadwick) is not bundled).
--   `r pkg("pitchRx", priority = "core")` provides access to pitch-level data through the Major League Baseball Advanced Media API.
+-   `r pkg("pitchRx", priority = "core")` provides access to pitch-level data through the Major League Baseball Advanced Media API. The package is featured prominently in Marchi, M., Albert, J., and Baumer, B. S. (2018). [*Analyzing baseball data with R*](https://www.taylorfrancis.com/books/mono/10.1201/9781351107099/analyzing-baseball-data-max-marchi-jim-albert-benjamin-baumer) (`r doi("10.1201/9781351107099")`). For a full description of the package see Sievert, C. (2014). [Taming PITCHf/x Data with XML2R and pitchRx](https://journal.r-project.org/archive/2014/RJ-2014-001/index.html).
 -   `r pkg("mlbstats")` provides functions for vector-based computation of many baseball statistics, both traditional and sabermetric. <!-- no longer on CRAN. This should not be confused with `r pkg("mlbstatsR")` which provides an interface to websites such as MLB.com, ESPN.com, and Baseball-Reference.com. `r pkg("mlbstatsR")` can download IDs and stats for players and team, as well as MLB logos. -->
 -   `r pkg("baseballDBR")` leverages the backend database functionality of **dplyr** to build local databases that mirror the data contained in `r pkg("Lahman")`. Like `r pkg("mlbstats")`, it also includes functions to compute baseball statistics, but on data frames rather than vectors.
 - `r pkg("baseballr")` consists of functions for extracting and analyzing baseball data from various sources such as [Baseball Reference](https://www.baseball-reference.com/), [FanGraphs](https://www.fangraphs.com/), and [Baseball Savant](https://baseballsavant.mlb.com/).
@@ -73,7 +73,7 @@ The list of packages is aspirationally comprehensive. If there is a sports analy
 -   `r pkg("BAwiR", priority = "core")` is a collection of tools to analyze basketball data, with focus on data scraping and visualization.
 -   `r pkg("AdvancedBasketballStats")` provides functions to calculate and analyze basketball statistics for players, teams, lineups (quintets), and plays.
 -   `r pkg("uncmbb")` contains data on University of North Carolina (at Chapel Hill) Men's Basketball Results since the 1949-50 season.
--   `r pkg("BasketballAnalyzeR")` accompanies the book [Basketball Data Science With Applications in R](https://www.routledge.com/Basketball-Data-Science-With-Applications-in-R/Zuccolotto-Manisera/p/book/9781138600799). This package includes data and functions to analyze and visualize basketball data.
+-   `r pkg("BasketballAnalyzeR")` accompanies the book [*Basketball Data Science With Applications in R*](https://www.routledge.com/Basketball-Data-Science-With-Applications-in-R/Zuccolotto-Manisera/p/book/9781138600799). This package includes data and functions to analyze and visualize basketball data.
 -   `r pkg("NBAloveR")` is an R interface to access basketball data from [Basketball Reference](https://www.basketball-reference.com) API. This package also contains functions to help users with analyzing basketball data.
 -   `r pkg("SpatialBall")` helps with spatial analysis of NBA data, in particular, generating offensive and defensive shot charts for teams, players, and seasons.
 -   `r pkg("wehoop")` provides functions for accessing women's college basketball and WNBA data from the [ESPN](https://www.espn.com) API.
@@ -143,32 +143,18 @@ In addition, other CRAN Task Views such as `r view("Bayesian")`, `r view("Machin
 
 #### Ratings
 
--   `r pkg("BradleyTerry2", priority = "core")` provides functions and examples for fitting Bradley-Terry models to paired comparison data. Packages `r pkg("BSBT")` (Bayesian Spatial Bradley-Terry) and `r pkg("BTdecayLasso")` (Bradley-Terry Model with Exponential Time Decayed Log-Likelihood and Adaptive Lasso) provides implementations to extended versions of the Bradley-Terry model.
+-   `r pkg("BradleyTerry2", priority = "core")` provides functions and examples for fitting Bradley-Terry models (`r doi("10.2307/2334029")`) to paired comparison data. Packages `r pkg("BSBT")` (Bayesian Spatial Bradley-Terry) and `r pkg("BTdecayLasso")` (Bradley-Terry Model with Exponential Time Decayed Log-Likelihood and Adaptive Lasso) provides implementations to extended versions of the Bradley-Terry model. See `r doi("10.18637/jss.v012.i01")` for background on the predecessor package. 
 -   Methods for estimating the Elo rating in sports can be found in the `r pkg("elo")`, `r pkg("welo")`, `r pkg("EloOptimized")`, `r pkg("EloChoice")`, and `r pkg("EloRating")` packages. `r pkg("PlayerRatings")` also offers implementations to other rating systems, including Glicko, Glicko-2, and Stephenson, in addition to Elo.
--   `r pkg("piratings")` computes pi-ratings for determining team ability in association football, as described in [Constantinou and Fenton (2013)](https://www.degruyter.com/document/doi/10.1515/jqas-2012-0036/html).
+-   `r pkg("piratings")` computes pi-ratings for determining team ability in association football, as described in [Constantinou and Fenton (2013)](https://www.degruyter.com/document/doi/10.1515/jqas-2012-0036/html) (`r doi("10.1016/j.knosys.2013.05.008")`).
 -   `r pkg("mvglmmRank")` provides functions for building multivariate generalized mixed models for ranking teams in sports.
 
-### Packages in action
-
-Several of these packages feature prominently in books and articles on various subjects. Here, we highlight some examples where you can learn more about a topic and how these R packages support that analysis.
-
--   `r pkg("pitchRx")`, and several other baseball-related packages not on CRAN, are used in:
-
-    -   Marchi, M., Albert, J., and Baumer, B. S. (2018). [*Analyzing baseball data with R*](https://www.taylorfrancis.com/books/mono/10.1201/9781351107099/analyzing-baseball-data-max-marchi-jim-albert-benjamin-baumer). 2nd edition. Chapman and Hall/CRC.
-
-    The package itself is detailed in:
-
-    -   Sievert, C. (2014). [Taming PITCHf/x Data with XML2R and pitchRx](https://journal.r-project.org/archive/2014/RJ-2014-001/index.html). *R Journal*, 6(1).
-
--   `r pkg("BasketballAnalyzeR")` accompanies:
-    -   Zuccolotto, P., and Manisera, M. (2020). [*Basketball data science: with applications in R*](https://www.routledge.com/Basketball-Data-Science-With-Applications-in-R/Zuccolotto-Manisera/p/book/9780429470615). CRC Press.
-
--   `r pkg("piratings")` supports:
-    -   Constantinou, A. C., Fenton, N. E., and Neil, M. (2013). [Profiting from an inefficient Association Football gambling market: Prediction, Risk and Uncertainty using Bayesian networks](https://www.sciencedirect.com/science/article/pii/S095070511300169X). *Knowledge-Based Systems*, 50, 60-86.
-
--   `r pkg("teamcolors")` was originally designed to create the data graphics in:
-    -   Lopez, M. J., Matthews, G. J., and Baumer, B. S. (2018). [How often does the best team win? A unified approach to understanding randomness in North American sport](https://projecteuclid.org/journals/annals-of-applied-statistics/volume-12/issue-4/How-often-does-the-best-team-win-A-unified-approach/10.1214/18-AOAS1165.full). *The Annals of Applied Statistics*, 12(4), 2483-2516.
 
 ### Links
 
 -   [GitHub repository for this Task View](https://github.com/beanumber/ctv-sportsanalytics)
+-   Lopez, M. J., Matthews, G. J., and Baumer, B. S. (2018). [How often does the best team win? A unified approach to understanding randomness in North American sport](https://projecteuclid.org/journals/annals-of-applied-statistics/volume-12/issue-4/How-often-does-the-best-team-win-A-unified-approach/10.1214/18-AOAS1165). *The Annals of Applied Statistics*, 12(4), 2483-2516.
+-   Constantinou, A. C., Fenton, N. E., and Neil, M. (2013). [Profiting from an inefficient Association Football gambling market: Prediction, Risk and Uncertainty using Bayesian networks](https://www.sciencedirect.com/science/article/pii/S095070511300169X). *Knowledge-Based Systems*, 50, 60-86.
+-   Zuccolotto, P., and Manisera, M. (2020). [*Basketball data science: with applications in R*](https://www.routledge.com/Basketball-Data-Science-With-Applications-in-R/Zuccolotto-Manisera/p/book/9780429470615). CRC Press.
+-   Marchi, M., Albert, J., and Baumer, B. S. (2018). [*Analyzing baseball data with R*](https://www.taylorfrancis.com/books/mono/10.1201/9781351107099/analyzing-baseball-data-max-marchi-jim-albert-benjamin-baumer). 2nd edition. Chapman and Hall/CRC.
+-   Sievert, C. (2014). [Taming PITCHf/x Data with XML2R and pitchRx](https://journal.r-project.org/archive/2014/RJ-2014-001/index.html). *R Journal*, 6(1).
+-   Bradley, R. A., & Terry, M. E. (1952). [Rank analysis of incomplete block designs: I. The method of paired comparisons.](https://www.jstor.org/stable/2334029?seq=1) *Biometrika*, 39(3/4), 324-345.
