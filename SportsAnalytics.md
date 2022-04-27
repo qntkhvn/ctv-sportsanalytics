@@ -40,7 +40,7 @@ Contributions are always welcome, and encouraged -- please see the linked GitHub
 
 ### Sport-Specific Packages
 
-#### American Football
+#### American Football 🏈
 
 -   `r pkg("nflverse", priority = "core")` is a collection of packages for obtaining and analyzing NFL data. The core `r pkg("nflverse")` includes `r pkg("nflfastR")`, `r pkg("nflseedR")`, `r pkg("nfl4th")`, `r pkg("nflreadr")`, and `r pkg("nflplotR")`.
 -   `r pkg("nflfastR")` contains functions to efficiently scrape NFL play-by-play data from 1999 to present. It is similar to [nflscrapR](https://github.com/maksimhorowitz/nflscrapR), but much faster. All models required by `r pkg("nflfastR")` are hosted in `r pkg("fastrmodels")`.
@@ -55,7 +55,7 @@ Contributions are always welcome, and encouraged -- please see the linked GitHub
 -   `r pkg("gsisdecoder")` contains functions to decode NFL Player IDs for use in conjunction with the `r pkg("nflfastR")` package.
 -   `r pkg("cfbfastR")` provides function for accessing college football play-by-play data from [collegefootballdata.com](https://collegefootballdata.com/).
 
-#### Association Football (Soccer)
+#### Association Football (Soccer) ⚽
 
 -   European soccer data is available through the `r pkg("engsoccerdata")` package, which contains match results for English and other European soccer leagues dating back to 1871.
 -   `r pkg("socceR")` provides functions for evaluating soccer predictions and simulating results from soccer matches and tournament.
@@ -73,7 +73,7 @@ Contributions are always welcome, and encouraged -- please see the linked GitHub
 
 -   `r pkg("fitzRoy")` is a package for scraping and processing Australian Football League (AFL) data. `r pkg("fitzRoy")` provides access to publicly data sources such as [AFL Tables](https://afltables.com/afl/afl_index.html), [Footy Wire](https://www.footywire.com), and [The Squiggle](https://squiggle.com.au).
 
-#### Baseball
+#### Baseball ⚾
 
 -   Historical baseball data is available through the `r pkg("Lahman", priority = "core")` package, which contains season-level data for Major League Baseball going back to 1871.
 -   `r pkg("retrosheet")` facilitates downloading game log, team IDs, rosters, and play-by-play and other files from [Retrosheet.org](http://wwws.retrosheet.org/), and returning the results as data frames. Local caching can be employed to improve efficiency. Note that the play-by-play data returned comes directly from the event files and is not parsed (i.e., [Chadwick](https://github.com/chadwickbureau/chadwick) is not bundled).
@@ -82,7 +82,7 @@ Contributions are always welcome, and encouraged -- please see the linked GitHub
 -   `r pkg("baseballDBR")` leverages the backend database functionality of **dplyr** to build local databases that mirror the data contained in `r pkg("Lahman")`. Like `r pkg("mlbstats")`, it also includes functions to compute baseball statistics, but on data frames rather than vectors.
 - `r pkg("baseballr", priority = "core")` consists of functions for extracting and analyzing baseball data from various sources such as [Baseball Reference](https://www.baseball-reference.com/), [FanGraphs](https://www.fangraphs.com/), and [Baseball Savant](https://baseballsavant.mlb.com/).
 
-#### Basketball
+#### Basketball 🏀
 
 -   `r pkg("BAwiR", priority = "core")` is a collection of tools to analyze basketball data, with focus on data scraping and visualization.
 -   `r pkg("AdvancedBasketballStats")` provides functions to calculate and analyze basketball statistics for players, teams, lineups (quintets), and plays.
@@ -93,7 +93,7 @@ Contributions are always welcome, and encouraged -- please see the linked GitHub
 -   `r pkg("wehoop")` provides functions for accessing women's college basketball and WNBA data from the [ESPN](https://www.espn.com) API.
 -   `r pkg("hoopR")` consists of functions for accessing men's college basketball and NBA data from various sources, including [ESPN](https://www.espn.com), [NBA Stats API](https://www.nba.com/stats), and [Ken Pomeroy's college basketball ratings](https://www.kenpom.com).
 
-#### Chess
+#### Chess ♟
 
 -   `r pkg("chess")` is an opinionated wrapper for R around [python-chess](https://github.com/niklasf/python-chess). It reads and writes [PGN files](https://en.wikipedia.org/wiki/Portable_Game_Notation) and SVGs of game boards.
 -   `r pkg("stockfish")` implements the UCI open communication protocol and ships with [Stockfish](https://github.com/official-stockfish/Stockfish), a popular, open source, powerful chess engine written in C++.
@@ -101,7 +101,7 @@ Contributions are always welcome, and encouraged -- please see the linked GitHub
 -   `r pkg("rchess")` provides functions for chess validations, pieces movements, check detection, and plotting chess boards.
 -   `r pkg("chessR")` allows users to obtain game data from online chess applications, including [chess.com](https://www.chess.com/) and [Lichess](https://lichess.org/).
 
-#### Cricket
+#### Cricket 🏏
 
 -   `r pkg("yorkr")` provides functions for analyzing statistics of cricket players and teams based on [Cricsheet](https://cricsheet.org) data.
 -   `r pkg("cricketr")` is a collection of tools for analyzing cricket performances of players and teams based on [ESPN Cricinfo Statsguru](https://stats.espncricinfo.com/ci/engine/stats) data.
@@ -117,7 +117,7 @@ Contributions are always welcome, and encouraged -- please see the linked GitHub
 -   `r pkg("rStrava")` contains functions to access [Strava](https://www.strava.com/) activity data from the [Strava API](https://developers.strava.com/).
 -   A detailed overview of tools for processing and analyzing tracking data can be found in the `r view("TrackingData")` CRAN Task View.
 
-#### Hockey
+#### Hockey 🏒
 
 <!-- no longer on CRAN
 -   `r pkg("hockeyR")` contains functions to load raw NHL play-by-play data from [NHL.com](https://nhl.com). Additionally, it contains functions for scraping [www.hockey-reference.com](https://www.hockey-reference.com) including standings, player stats, and jersey number history.
@@ -126,20 +126,20 @@ Contributions are always welcome, and encouraged -- please see the linked GitHub
 -   Access to data exposed by the [NHL API](https://gitlab.com/dword4/nhlapi) is provided by the `r pkg("nhlapi")` and `r pkg("nhlscrape")` packages.
 -   `r pkg("fastRhockey")` provides API wrappers for the NHL and Premier Hockey Federation (PHF), formerly known as the National Women's Hockey League (NWHL).
 
-#### Softball
+#### Softball 🥎
 
 -   `r pkg("runexp")` provides methods for estimating runs scored in softball. In particular, `r pkg("runexp")` centers around theoretical expectation using discrete Markov chains and empirical distribution using multinomial random simulation.
 
-#### Swimming
+#### Swimming 🏊
 
 -   `r pkg("SwimmeR")` reads swimming results in a variety of formats and returns results in tidy data frame. It also includes functions for converting times between short-course yards (SCY), short-course meters (SCM), and long-course meters (LCM).
 
-#### Track and Field
+#### Track and Field 🏃
 
 -   `r pkg("combinedevents")` contains functions for calculating scores and marks for combined events competitions in track and field, based on the [International Association of Athletics Federation](https://www.worldathletics.org/) scoring tables.
 -   `r pkg("JumpeR")` consists of functions for importing (primarily) and analyzing track and field data.
 
-#### Volleyball
+#### Volleyball 🏐
 
 -   `r pkg("volleystat")` contains match statistics from the [German Volleyball Bundesliga](https://www.volleyball-bundesliga.de/) from 2013-14 to 2018-19. Data were extracted from the league [homepage](www.volleyball-bundesliga.de).
 
