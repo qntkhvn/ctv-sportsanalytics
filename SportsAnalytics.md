@@ -7,9 +7,23 @@ version: 2022-04-21
 source: https://github.com/beanumber/ctv-sportsanalytics
 ---
 
-This CRAN Task View contains a list of packages useful for sports analytics, grouped by sport. Following the list of packages, we have included a list of selected books and articles that use some of these packages in substantive ways. Our goal in compiling this list is to help researchers find the tools they need to complete their work in R.
+This CRAN Task View contains a list of packages useful for sports analytics. 
+Most of the packages are sport-specific and are grouped as such. 
+However, we also include a **General** section for packages that provide ancillary functionality relevant to sports analytics (e.g., team-themed color palettes), and a **Modeling** section for packages useful for statistical modeling.
+Throughout the Task View, and collected in the **Links** section at the end, we have included a list of selected books and articles that use some of these packages in substantive ways. 
+Our goal in compiling this list is to help researchers find the tools they need to complete their work in R.
 
-The list of packages is aspirationally comprehensive. If there is a sports analytics package on CRAN that we have missed, please let us know. Contributions are always welcome, and encouraged. The source file for this particular task view file resides in a GitHub repository (see below). Please read the [Guide to Contributing](Contributing.md), then open an issue and/or submit a pull request.
+To be considered for inclusion, the package must be useful for conducting sports analytics. Most packages provide functionality for some combination of:
+
+#. acquiring data for a specific sport or league
+#. performing common computations on sport-specific data
+
+Esports and sports betting packages are within scope.
+
+The list of packages is aspirationally comprehensive. 
+If there is a sports analytics package on CRAN that we have missed, please let us know. 
+Contributions are always welcome, and encouraged -- please see the linked GitHub repository for details. 
+
 
 ### General
 
