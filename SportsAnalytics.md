@@ -69,7 +69,7 @@ Contributions are always welcome, and encouraged -- please see the linked GitHub
 -   `r pkg("worldfootballR")` provides clean and tidy soccer game data from a number of popular sites, including [FBref](https://fbref.com/en/), transfer and valuations data from [Transfermarkt](https://www.transfermarkt.com/) and shooting location data from [Understat](https://understat.com/).
 -->
 
-#### Australian Rules Football
+#### Australian Rules Football 🏉
 
 -   `r pkg("fitzRoy")` is a package for scraping and processing Australian Football League (AFL) data. `r pkg("fitzRoy")` provides access to publicly data sources such as [AFL Tables](https://afltables.com/afl/afl_index.html), [Footy Wire](https://www.footywire.com), and [The Squiggle](https://squiggle.com.au).
 
@@ -107,11 +107,11 @@ Contributions are always welcome, and encouraged -- please see the linked GitHub
 -   `r pkg("cricketr")` is a collection of tools for analyzing cricket performances of players and teams based on [ESPN Cricinfo Statsguru](https://stats.espncricinfo.com/ci/engine/stats) data.
 -   `r pkg("cricketdata")` includes functions to obtain international cricket data from two major sources, [ESPNCricinfo](https://www.espncricinfo.com/) and [Cricsheet](https://cricsheet.org/).
 
-#### Esports
+#### Esports 🎮
 
 -   `r pkg("RDota2")` contains functions for retreiving data for the video game [Dota2 from the Steam API](https://store.steampowered.com/app/570/Dota_2).
 
-#### GPS Tracking
+#### GPS Tracking 📍
 
 -   `r pkg("trackeR")` and `r pkg("trackeRapp")` provide tools for analyzing running, cycling and swimming data from GPS-enabled tracking devices within R. These two packages allow users to tidy and explore data from workouts and competitions.
 -   `r pkg("rStrava")` contains functions to access [Strava](https://www.strava.com/) activity data from the [Strava API](https://developers.strava.com/).
