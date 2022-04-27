@@ -146,7 +146,7 @@ Contributions are always welcome, and encouraged -- please see the linked GitHub
 ###  Modeling
 
 A wide array of functions for modeling in sports analytics are available in the R base package (e.g. `lm()` and `glm()`). 
-In addition, other CRAN Task Views such as `r view("Bayesian")`, `r view("MachineLearning")`, `r view("Spatial")`, and `r view("SpatioTemporal")` may contain appropriate packages for applying statistical methods to sports.
+In addition, other CRAN Task Views such as `r view("Bayesian")`, `r view("MachineLearning")`, `r view("ModelDeployment")`, `r view("Spatial")`, `r view("SpatioTemporal")`, and `r view("WebTechnologies")` may contain appropriate packages for applying statistical methods to sports.
 
 #### Betting
 
@@ -161,7 +161,6 @@ In addition, other CRAN Task Views such as `r view("Bayesian")`, `r view("Machin
 -   Methods for estimating the Elo rating in sports can be found in the `r pkg("elo")`, `r pkg("welo")`, `r pkg("EloOptimized")`, `r pkg("EloChoice")`, and `r pkg("EloRating")` packages. `r pkg("PlayerRatings")` also offers implementations to other rating systems, including Glicko, Glicko-2, and Stephenson, in addition to Elo.
 -   `r pkg("piratings")` computes pi-ratings for determining team ability in association football, as described in [Constantinou and Fenton (2013)](https://www.degruyter.com/document/doi/10.1515/jqas-2012-0036/html) (`r doi("10.1016/j.knosys.2013.05.008")`).
 -   `r pkg("mvglmmRank")` provides functions for building multivariate generalized mixed models for ranking teams in sports.
-
 
 ### Links
 
