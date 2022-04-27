@@ -11,6 +11,19 @@ This CRAN Task View contains a list of packages useful for sports analytics, gro
 
 The list of packages is aspirationally comprehensive. If there is a sports analytics package on CRAN that we have missed, please let us know. Contributions are always welcome, and encouraged. The source file for this particular task view file resides in a GitHub repository (see below). Please read the [Guide to Contributing](Contributing.md), then open an issue and/or submit a pull request.
 
+### General
+
+-   `r pkg("teamcolors")` provides color palettes, **ggplot2** themes, **xaringan** themes, and logos for professional teams across a variety of sports and leagues.
+-   `r pkg("colorr")` contains color palettes for professional sports teams in the EPL, MLB, NBA, NHL, and NFL.
+-   `r pkg("nbapalettes")` contains color palettes inspired by NBA team jersey colors.
+<!-- no longer on CRAN
+-   `r pkg("aRbs")` contains functions for finding arbitrage opportunities in sports betting websites. Data are collected through [www.oddschecker.com](https://www.oddschecker.com)
+-->
+-   `r pkg("sportyR")` contains functions for creating **ggplot2** representations of sports playing surfaces pursuant to rule-book specifications. This is particularly useful for plotting player tracking data.
+-   `r pkg("SportsTour")` provides functions for displaying tournament fixtures using knock-out and round robin methods.
+-   `r pkg("SportsAnalytics")`'s goal is to provide infrastructure to perform general sports analytics. However, currently it appears to be incomplete and currently only contains a few data sets and functions.
+-   `r pkg("TouRnament")` consists of two functions: 1) Creating league tables based on results and 2) Creating a match schedule for a league.
+
 ### Sport-Specific Packages
 
 #### American Football
@@ -134,19 +147,6 @@ In addition, other CRAN Task Views such as `r view("Bayesian")`, `r view("Machin
 -   Methods for estimating the Elo rating in sports can be found in the `r pkg("elo")`, `r pkg("welo")`, `r pkg("EloOptimized")`, `r pkg("EloChoice")`, and `r pkg("EloRating")` packages. `r pkg("PlayerRatings")` also offers implementations to other rating systems, including Glicko, Glicko-2, and Stephenson, in addition to Elo.
 -   `r pkg("piratings")` computes pi-ratings for determining team ability in association football, as described in [Constantinou and Fenton (2013)](https://www.degruyter.com/document/doi/10.1515/jqas-2012-0036/html).
 -   `r pkg("mvglmmRank")` provides functions for building multivariate generalized mixed models for ranking teams in sports.
-
-### General
-
--   `r pkg("teamcolors")` provides color palettes, **ggplot2** themes, **xaringan** themes, and logos for professional teams across a variety of sports and leagues.
--   `r pkg("colorr")` contains color palettes for professional sports teams in the EPL, MLB, NBA, NHL, and NFL.
--   `r pkg("nbapalettes")` contains color palettes inspired by NBA team jersey colors.
-<!-- no longer on CRAN
--   `r pkg("aRbs")` contains functions for finding arbitrage opportunities in sports betting websites. Data are collected through [www.oddschecker.com](https://www.oddschecker.com)
--->
--   `r pkg("sportyR")` contains functions for creating **ggplot2** representations of sports playing surfaces pursuant to rule-book specifications. This is particularly useful for plotting player tracking data.
--   `r pkg("SportsTour")` provides functions for displaying tournament fixtures using knock-out and round robin methods.
--   `r pkg("SportsAnalytics")`'s goal is to provide infrastructure to perform general sports analytics. However, currently it appears to be incomplete and currently only contains a few data sets and functions.
--   `r pkg("TouRnament")` consists of two functions: 1) Creating league tables based on results and 2) Creating a match schedule for a league.
 
 ### Packages in action
 
