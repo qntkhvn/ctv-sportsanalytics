@@ -1,9 +1,10 @@
 ---
 name: SportsAnalytics
 topic: Sports Analytics
-maintainer: Ben Baumer, Quang Nguyen, Greg Matthews
+maintainer: Benjamin S. Baumer, Quang Nguyen, Gregory J. Matthews
 email: ben.baumer@gmail.com
 version: 2022-04-21
+source: https://github.com/beanumber/ctv-sportsanalytics
 ---
 
 This CRAN Task View contains a list of packages useful for sports analytics, grouped by sport. Following the list of packages, we have included a list of selected books and articles that use some of these packages in substantive ways. Our goal in compiling this list is to help researchers find the tools they need to complete their work in R.
