@@ -146,7 +146,7 @@ Contributions are always welcome, and encouraged -- please see the linked GitHub
 ###  Modeling
 
 A wide array of functions for modeling in sports analytics are available in the R base package (e.g. `lm()` and `glm()`). 
-In addition, other CRAN Task Views such as `r view("Bayesian")`, `r view("MachineLearning")`, `r view("ModelDeployment")`, `r view("Spatial")`, `r view("SpatioTemporal")`, and `r view("WebTechnologies")` may contain appropriate packages for applying modern statistical and data science techniques to sports.
+In addition, other CRAN Task Views such as `r view("Bayesian")`, `r view("MachineLearning")`, `r view("Robust")`, `r view("Spatial")`, and `r view("SpatioTemporal")` may contain appropriate packages for applying statistical methods to sports.
 
 #### Betting
 
