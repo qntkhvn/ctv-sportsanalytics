@@ -24,15 +24,11 @@ The list of packages is aspirationally comprehensive.
 If there is a sports analytics package on CRAN that we have missed, please let us know. 
 Contributions are always welcome, and encouraged -- please see the linked GitHub repository for details. 
 
-
 ### General
 
 -   `r pkg("teamcolors")` provides color palettes, **ggplot2** themes, **xaringan** themes, and logos for professional teams across a variety of sports and leagues. `r pkg("teamcolors")` was originally designed to create the data graphics in [Lopez, et al. (2018)](https://projecteuclid.org/journals/annals-of-applied-statistics/volume-12/issue-4/How-often-does-the-best-team-win-A-unified-approach/10.1214/18-AOAS1165) (`r doi("10.1214/18-AOAS1165")`).
 -   `r pkg("colorr")` contains color palettes for professional sports teams in the EPL, MLB, NBA, NHL, and NFL.
 -   `r pkg("nbapalettes")` contains color palettes inspired by NBA team jersey colors.
-<!-- no longer on CRAN
--   `r pkg("aRbs")` contains functions for finding arbitrage opportunities in sports betting websites. Data are collected through [www.oddschecker.com](https://www.oddschecker.com)
--->
 -   `r pkg("sportyR")` contains functions for creating **ggplot2** representations of sports playing surfaces pursuant to rule-book specifications. This is particularly useful for plotting player tracking data.
 -   `r pkg("SportsTour")` provides functions for displaying tournament fixtures using knock-out and round robin methods.
 -   `r pkg("SportsAnalytics")`'s goal is to provide infrastructure to perform general sports analytics. However, currently it appears to be incomplete and currently only contains a few data sets and functions.
@@ -65,9 +61,6 @@ Contributions are always welcome, and encouraged -- please see the linked GitHub
 -   `r pkg("footballpenaltiesBL")` contains data and plotting functions for analyzing penalty kicks in the [German Men's Bundesliga](https://www.bundesliga.com/) from 1963-64 to 2016-17.
 -   `r pkg("footBayes")` consists of functions for fitting widely known soccer models (double Poisson, bivariate Poisson, Skellam, Student's t) through Hamiltonian Monte Carlo and Maximum Likelihood estimation approaches using Stan. The package also provides tools for visualizing team strengths and predicting match outcomes.
 -   `r pkg("itscalledsoccer")` enables access to American soccer (MLS, NWSL, and USL) data through the [American Soccer Analysis app API](https://app.americansocceranalysis.com/).
-<!-- no longer on CRAN
--   `r pkg("worldfootballR")` provides clean and tidy soccer game data from a number of popular sites, including [FBref](https://fbref.com/en/), transfer and valuations data from [Transfermarkt](https://www.transfermarkt.com/) and shooting location data from [Understat](https://understat.com/).
--->
 
 #### Australian Rules Football 🏉
 
@@ -78,7 +71,7 @@ Contributions are always welcome, and encouraged -- please see the linked GitHub
 -   Historical baseball data is available through the `r pkg("Lahman", priority = "core")` package, which contains season-level data for Major League Baseball going back to 1871.
 -   `r pkg("retrosheet")` facilitates downloading game log, team IDs, rosters, and play-by-play and other files from [Retrosheet.org](http://wwws.retrosheet.org/), and returning the results as data frames. Local caching can be employed to improve efficiency. Note that the play-by-play data returned comes directly from the event files and is not parsed (i.e., [Chadwick](https://github.com/chadwickbureau/chadwick) is not bundled).
 -   `r pkg("pitchRx", priority = "core")` provides access to pitch-level data through the Major League Baseball Advanced Media API. The package is featured prominently in Marchi, M., Albert, J., and Baumer, B. S. (2018). [*Analyzing baseball data with R*](https://www.taylorfrancis.com/books/mono/10.1201/9781351107099/analyzing-baseball-data-max-marchi-jim-albert-benjamin-baumer) (`r doi("10.1201/9781351107099")`). For a full description of the package see Sievert, C. (2014). [Taming PITCHf/x Data with XML2R and pitchRx](https://journal.r-project.org/archive/2014/RJ-2014-001/index.html) (`r doi("10.32614/RJ-2014-001")`).
--   `r pkg("mlbstats")` provides functions for vector-based computation of many baseball statistics, both traditional and sabermetric. <!-- no longer on CRAN. This should not be confused with `r pkg("mlbstatsR")` which provides an interface to websites such as MLB.com, ESPN.com, and Baseball-Reference.com. `r pkg("mlbstatsR")` can download IDs and stats for players and team, as well as MLB logos. -->
+-   `r pkg("mlbstats")` provides functions for vector-based computation of many baseball statistics, both traditional and sabermetric.
 -   `r pkg("baseballDBR")` leverages the backend database functionality of **dplyr** to build local databases that mirror the data contained in `r pkg("Lahman")`. Like `r pkg("mlbstats")`, it also includes functions to compute baseball statistics, but on data frames rather than vectors.
 - `r pkg("baseballr", priority = "core")` consists of functions for extracting and analyzing baseball data from various sources such as [Baseball Reference](https://www.baseball-reference.com/), [FanGraphs](https://www.fangraphs.com/), and [Baseball Savant](https://baseballsavant.mlb.com/).
 
@@ -119,9 +112,6 @@ Contributions are always welcome, and encouraged -- please see the linked GitHub
 
 #### Hockey 🏒
 
-<!-- no longer on CRAN
--   `r pkg("hockeyR")` contains functions to load raw NHL play-by-play data from [NHL.com](https://nhl.com). Additionally, it contains functions for scraping [www.hockey-reference.com](https://www.hockey-reference.com) including standings, player stats, and jersey number history.
--->
 -   `r pkg("NHLData")` contains scores from NHL games dating back to 1917. Data are stored one season at a time and contains scores for every game during a particular season.
 -   Access to data exposed by the [NHL API](https://gitlab.com/dword4/nhlapi) is provided by the `r pkg("nhlapi")` and `r pkg("nhlscrape")` packages.
 -   `r pkg("fastRhockey")` provides API wrappers for the NHL and Premier Hockey Federation (PHF), formerly known as the National Women's Hockey League (NWHL).
