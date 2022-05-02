@@ -10,7 +10,7 @@ source: https://github.com/beanumber/ctv-sportsanalytics
 This CRAN Task View contains a list of packages useful for sports analytics. 
 Most of the packages are sport-specific and are grouped as such. 
 However, we also include a **General** section for packages that provide ancillary functionality relevant to sports analytics (e.g., team-themed color palettes), and a **Modeling** section for packages useful for statistical modeling.
-Throughout the Task View, and collected in the **Links** section at the end, we have included a list of selected books and articles that use some of these packages in substantive ways. 
+Throughout the Task View, and collected in the **Related Links** section at the end, we have included a list of selected books and articles that use some of these packages in substantive ways. 
 Our goal in compiling this list is to help researchers find the tools they need to complete their work in R.
 
 To be considered for inclusion, the package must be useful for conducting sports analytics. Most packages provide functionality for some combination of:
@@ -154,7 +154,6 @@ In addition, other CRAN Task Views such as `r view("Bayesian")`, `r view("Machin
 
 ### Links
 
--   [GitHub repository for this Task View](https://github.com/beanumber/ctv-sportsanalytics)
 -   Lopez, M. J., Matthews, G. J., and Baumer, B. S. (2018). [How often does the best team win? A unified approach to understanding randomness in North American sport](https://projecteuclid.org/journals/annals-of-applied-statistics/volume-12/issue-4/How-often-does-the-best-team-win-A-unified-approach/10.1214/18-AOAS1165). *The Annals of Applied Statistics*, 12(4), 2483-2516.
 -   Constantinou, A. C., Fenton, N. E., and Neil, M. (2013). [Profiting from an inefficient Association Football gambling market: Prediction, Risk and Uncertainty using Bayesian networks](https://www.sciencedirect.com/science/article/pii/S095070511300169X). *Knowledge-Based Systems*, 50, 60-86.
 -   Zuccolotto, P., and Manisera, M. (2020). [*Basketball data science: with applications in R*](https://www.routledge.com/Basketball-Data-Science-With-Applications-in-R/Zuccolotto-Manisera/p/book/9780429470615). CRC Press.
