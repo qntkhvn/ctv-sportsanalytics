@@ -116,13 +116,13 @@ Contributions are always welcome, and encouraged -- please see the linked GitHub
 -   Access to data exposed by the [NHL API](https://gitlab.com/dword4/nhlapi) is provided by the `r pkg("nhlapi")` and `r pkg("nhlscrape")` packages.
 -   `r pkg("fastRhockey")` provides API wrappers for the NHL and Premier Hockey Federation (PHF), formerly known as the National Women's Hockey League (NWHL).
 
+#### Racket sports 🎾🏓🏸
+
+-   `r pkg("squashinformr")` consists of functions for retrieving data on the Professional Squash Association World Tour from [SquashInfo](http://www.squashinfo.com/).
+
 #### Softball 🥎
 
 -   `r pkg("runexp")` provides methods for estimating runs scored in softball. In particular, `r pkg("runexp")` centers around theoretical expectation using discrete Markov chains and empirical distribution using multinomial random simulation.
-
-#### Squash
-
--   `r pkg("squashinformr")` consists of functions for retrieving data on the Professional Squash Association World Tour from [SquashInfo[(http://www.squashinfo.com/).
 
 #### Swimming 🏊
 
