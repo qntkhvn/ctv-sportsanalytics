@@ -4,14 +4,18 @@ topic: Sports Analytics
 maintainer: Benjamin S. Baumer, Quang Nguyen, Gregory J. Matthews
 email: ben.baumer@gmail.com
 version: 2022-05-11
-source: https://github.com/beanumber/ctv-sportsanalytics
+source: https://github.com/cran-task-views/SportsAnalytics/
 ---
 
 This CRAN Task View contains a list of packages useful for sports analytics. 
-Most of the packages are sport-specific and are grouped as such. 
-However, we also include a **General** section for packages that provide ancillary functionality relevant to sports analytics (e.g., team-themed color palettes), and a **Modeling** section for packages useful for statistical modeling.
-Throughout the Task View, and collected in the **Related Links** section at the end, we have included a list of selected books and articles that use some of these packages in substantive ways. 
-Our goal in compiling this list is to help researchers find the tools they need to complete their work in R.
+Most of the packages are sport-specific and are grouped as such.  However, we
+also include a **General** section for packages that provide ancillary
+functionality relevant to sports analytics (e.g., team-themed color palettes),
+and a **Modeling** section for packages useful for statistical modeling.
+Throughout the task view, and collected in the **Related links** section at the
+end, we have included a list of selected books and articles that use some of
+these packages in substantive ways.  Our goal in compiling this list is to help
+researchers find the tools they need to complete their work in R.
 
 To be considered for inclusion, the package must be useful for conducting sports analytics. Most packages provide functionality for some combination of:
 
@@ -70,7 +74,7 @@ Contributions are always welcome, and encouraged -- please see the linked GitHub
 
 -   Historical baseball data is available through the `r pkg("Lahman", priority = "core")` package, which contains season-level data for Major League Baseball going back to 1871.
 -   `r pkg("retrosheet")` facilitates downloading game log, team IDs, rosters, and play-by-play and other files from [Retrosheet.org](http://wwws.retrosheet.org/), and returning the results as data frames. Local caching can be employed to improve efficiency. Note that the play-by-play data returned comes directly from the event files and is not parsed (i.e., [Chadwick](https://github.com/chadwickbureau/chadwick) is not bundled).
--   `r pkg("pitchRx", priority = "core")` provides access to pitch-level data through the Major League Baseball Advanced Media API. The package is featured prominently in Marchi, M., Albert, J., and Baumer, B. S. (2018). [*Analyzing baseball data with R*](https://www.taylorfrancis.com/books/mono/10.1201/9781351107099/analyzing-baseball-data-max-marchi-jim-albert-benjamin-baumer) (`r doi("10.1201/9781351107099")`). For a full description of the package see Sievert, C. (2014). [Taming PITCHf/x Data with XML2R and pitchRx](https://journal.r-project.org/archive/2014/RJ-2014-001/index.html) (`r doi("10.32614/RJ-2014-001")`).
+-   `r pkg("pitchRx", priority = "core")` provides access to pitch-level data through the Major League Baseball Advanced Media API. The package is featured prominently in Marchi, M., Albert, J., and Baumer, B. S. (2018). [*Analyzing baseball data with R*](https://www.taylorfrancis.com/books/mono/10.1201/9781351107099/analyzing-baseball-data-max-marchi-jim-albert-benjamin-baumer) (`r doi("10.1201/9781351107099")`). For a full description of the package see Sievert, C. (2014). [Taming PITCHf/x Data with XML2R and pitchRx](https://journal.R-project.org/archive/2014/RJ-2014-001/) (`r doi("10.32614/RJ-2014-001")`).
 -   `r pkg("mlbstats")` provides functions for vector-based computation of many baseball statistics, both traditional and sabermetric.
 -   `r pkg("baseballDBR")` leverages the backend database functionality of **dplyr** to build local databases that mirror the data contained in `r pkg("Lahman")`. Like `r pkg("mlbstats")`, it also includes functions to compute baseball statistics, but on data frames rather than vectors.
 - `r pkg("baseballr", priority = "core")` consists of functions for extracting and analyzing baseball data from various sources such as [Baseball Reference](https://www.baseball-reference.com/), [FanGraphs](https://www.fangraphs.com/), and [Baseball Savant](https://baseballsavant.mlb.com/).
@@ -162,5 +166,5 @@ In addition, other CRAN Task Views such as `r view("Bayesian")`, `r view("Machin
 -   Constantinou, A. C., Fenton, N. E., and Neil, M. (2013). [Profiting from an inefficient Association Football gambling market: Prediction, Risk and Uncertainty using Bayesian networks](https://www.sciencedirect.com/science/article/pii/S095070511300169X). *Knowledge-Based Systems*, 50, 60-86.
 -   Zuccolotto, P., and Manisera, M. (2020). [*Basketball data science: with applications in R*](https://www.routledge.com/Basketball-Data-Science-With-Applications-in-R/Zuccolotto-Manisera/p/book/9780429470615). CRC Press.
 -   Marchi, M., Albert, J., and Baumer, B. S. (2018). [*Analyzing baseball data with R*](https://www.taylorfrancis.com/books/mono/10.1201/9781351107099/analyzing-baseball-data-max-marchi-jim-albert-benjamin-baumer). 2nd edition. Chapman and Hall/CRC.
--   Sievert, C. (2014). [Taming PITCHf/x Data with XML2R and pitchRx](https://journal.r-project.org/archive/2014/RJ-2014-001/index.html). *R Journal*, 6(1).
+-   Sievert, C. (2014). [Taming PITCHf/x Data with XML2R and pitchRx](https://journal.R-project.org/archive/2014/RJ-2014-001/). *R Journal*, 6(1).
 -   Bradley, R. A., & Terry, M. E. (1952). [Rank analysis of incomplete block designs: I. The method of paired comparisons.](https://www.jstor.org/stable/2334029?seq=1) *Biometrika*, 39(3/4), 324-345.
